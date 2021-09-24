@@ -1,0 +1,122 @@
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url(https://fonts.google.com/specimen/Inter);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    width: 1080px;
+    height: 446px;
+}
+span {
+    color:hsl(277, 64%, 61%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff; 
+    width: 540px; 
+    height: 90%; 
+}
+.imagem{
+    background-image: linear-gradient(hsla(277, 64%, 61%, 0.589) , hsla(277, 64%, 61%, 0.589)), url('images/image-header-desktop.jpg');
+    width: 540px;
+    height: 446px;
+    border-radius: 0 10px 10px 0;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+    width: 75%;
+    font-family: 'Inter', sans-serif;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: end;
+}
+
+@media(max-width: 1079px) {
+    html {
+        height: 100%;
+    }
+    body {
+        height: 880px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 340px;
+        height: 90%;
+    }
+
+    .imagem {
+        display: inline-block;
+        background-image: linear-gradient(hsla(277, 64%, 61%, 0.589) , hsla(277, 64%, 61%, 0.589)), url(images/image-header-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 632px;
+        zoom: 52%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50%;
+    }
+    .texto {
+        height: 50%;
+        width: 86%;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .grid div {
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .texto p {
+        font-size: 17px;
+    }
+}
